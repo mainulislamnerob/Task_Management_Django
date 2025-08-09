@@ -13,3 +13,8 @@ def contact (request):
     return HttpResponse("<h1 style='color: red'>This is contact page</h1>")
 def show_task(request):
     return HttpResponse("<h1>This is our task page</h1>")
+
+def show_specific_task(request, id):
+    print("id",id)
+    print("id type", type(id))
+    return HttpResponse("This is specific task page")
